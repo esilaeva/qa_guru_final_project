@@ -1,15 +1,12 @@
-package ru.uralsib.ui.pages;
+package ru.uralsib.ui.pages.personalPages;
 
 import com.codeborne.selenide.SelenideElement;
 import io.qameta.allure.Step;
 import lombok.Data;
-import org.aeonbits.owner.ConfigFactory;
-import ru.uralsib.config.WebConfig;
 
 import static com.codeborne.selenide.Condition.text;
 import static com.codeborne.selenide.Selectors.byText;
 import static com.codeborne.selenide.Selenide.$;
-import static com.codeborne.selenide.Selenide.open;
 
 @Data
 public class PersonalPage {
@@ -27,30 +24,23 @@ public class PersonalPage {
             aktsii = $("a[href='/aktsii']"),
             officeAtm = $("a[href='/office-atm/atms/map']"),
             cards = $("div.BlockMenu___tagsContainer__8WHZe div").$(byText("Карты"));
-    WebConfig config = ConfigFactory.create(WebConfig.class, System.getProperties());
 
-    @Step("Open Main Page")
-    public PersonalPage openMainPage() {
-        open(config.getBaseUrl());
-
-        return this;
-    }
 
     @Step("main Page was opened")
     public void checkPersonalPageWasOpened() {
-        kredity.shouldHave(text("Кредиты"));
+        getKredity().shouldHave(text("Кредиты"));
     }
 
     @Step("Open Debetovye-karty Page")
     public PersonalPage openDebetovyeKartyPage() {
-        debetovyeKarty.click();
+        getDebetovyeKarty().click();
 
         return this;
     }
 
     @Step("Open ATM Page")
     public PersonalPage openAtmPage() {
-        officeAtm.click();
+        getOfficeAtm().click();
 
         return this;
     }
