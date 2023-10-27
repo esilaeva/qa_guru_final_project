@@ -2,6 +2,7 @@ package ru.uralsib.tests;
 
 import com.codeborne.selenide.logevents.SelenideLogger;
 import io.qameta.allure.selenide.AllureSelenide;
+import lombok.Data;
 import org.aeonbits.owner.ConfigFactory;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeAll;
@@ -9,10 +10,30 @@ import org.junit.jupiter.api.BeforeEach;
 import ru.uralsib.config.WebConfig;
 import ru.uralsib.config.WebProvider;
 import ru.uralsib.helpers.Attach;
+import ru.uralsib.ui.components.SecondaryMenuComponent;
+import ru.uralsib.ui.pages.businessPages.BusinessPage;
+import ru.uralsib.ui.pages.businessPages.VedPage;
+import ru.uralsib.ui.pages.personalPages.DebetovyeKartyPage;
+import ru.uralsib.ui.pages.personalPages.InvesticiiPage;
+import ru.uralsib.ui.pages.personalPages.IszhPage;
+import ru.uralsib.ui.pages.personalPages.PersonalPage;
+import ru.uralsib.ui.pages.premiumPages.PremiumPage;
 
 import static com.codeborne.selenide.Selenide.closeWebDriver;
 
+@Data
 public class TestBase {
+
+    SecondaryMenuComponent secondaryMenuComponent = new SecondaryMenuComponent();
+    PersonalPage personalPage = new PersonalPage();
+    DebetovyeKartyPage debKarty = new DebetovyeKartyPage();
+    InvesticiiPage investiciiPage = new InvesticiiPage();
+    IszhPage iszhPage = new IszhPage();
+
+    PremiumPage premiumPage = new PremiumPage();
+
+    BusinessPage businessPage = new BusinessPage();
+    VedPage vedPage = new VedPage();
 
     protected static final WebConfig config = ConfigFactory.create(WebConfig.class, System.getProperties());
 
