@@ -38,6 +38,13 @@ public class PersonalPage {
         return this;
     }
 
+@Step("Open Investicii Page")
+    public PersonalPage openInvesticiiPage() {
+        getInvesticii().click();
+
+        return this;
+    }
+
     @Step("Open ATM Page")
     public PersonalPage openAtmPage() {
         getOfficeAtm().click();
