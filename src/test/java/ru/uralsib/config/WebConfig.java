@@ -3,7 +3,7 @@ package ru.uralsib.config;
 import org.aeonbits.owner.Config;
 
 @Config.Sources({
-        "classpath:config.properties"
+        "classpath:${env}.properties"
 })
 public interface WebConfig extends Config {
 
