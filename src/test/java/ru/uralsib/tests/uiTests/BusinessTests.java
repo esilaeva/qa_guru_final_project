@@ -12,7 +12,7 @@ import ru.uralsib.tests.TestBase;
 public class BusinessTests extends TestBase {
 
     @Test
-    @Tag("Business")
+    @Tag("business")
     @DisplayName("Открытие страницы 'Депозиты'")
     public void checkDepositPageWasOpened() {
         getSecondaryMenuComponent().openBusinessPage();
@@ -21,7 +21,7 @@ public class BusinessTests extends TestBase {
     }
 
     @Test
-    @Tag("Business")
+    @Tag("business")
     @DisplayName("Выбор зарплатного проекта")
     public void checkBusinessCardPageWasOpened() {
         getSecondaryMenuComponent().openBusinessPage();

@@ -14,7 +14,7 @@ import java.io.File;
 public class PremiumTests extends TestBase {
 
     @Test
-    @Tag("Premium")
+    @Tag("premium")
     @DisplayName("Открытие страницы 'Премиум'")
     public void checkPremiumPageWasOpened() {
         getSecondaryMenuComponent().openPremiumPage();
@@ -22,7 +22,7 @@ public class PremiumTests extends TestBase {
     }
 
     @Test
-    @Tag("Premium")
+    @Tag("premium")
     @DisplayName("Загрузка прайса")
     public void downloadPrice() {
         getSecondaryMenuComponent().openPremiumPage();
