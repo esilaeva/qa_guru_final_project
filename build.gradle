@@ -44,3 +44,21 @@ tasks.withType(Test) {
 test {
     useJUnitPlatform()
 }
+
+task business_test(type: Test) {
+    useJUnitPlatform{
+        includeTags('business')
+    }
+}
+
+task personal_test(type: Test) {
+    useJUnitPlatform{
+        includeTags('personal')
+    }
+}
+
+task premium_test(type: Test) {
+    useJUnitPlatform{
+        includeTags('premium')
+    }
+}

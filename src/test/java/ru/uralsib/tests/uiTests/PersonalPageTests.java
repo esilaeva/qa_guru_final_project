@@ -12,7 +12,7 @@ import ru.uralsib.tests.TestBase;
 public class PersonalPageTests extends TestBase {
 
     @Test
-    @Tag("Personal")
+    @Tag("personal")
     @DisplayName("Открытие Main Page")
     public void checkPersonalButton() {
         getSecondaryMenuComponent().openMainPage();
@@ -20,7 +20,7 @@ public class PersonalPageTests extends TestBase {
     }
 
     @Test
-    @Tag("Personal")
+    @Tag("personal")
     @DisplayName("Открытие страницы 'Дебетовые карты'")
     public void checkDebKartyButton() {
         getSecondaryMenuComponent().openMainPage();
@@ -30,7 +30,7 @@ public class PersonalPageTests extends TestBase {
     }
 
     @Test
-    @Tag("Personal")
+    @Tag("personal")
     @DisplayName("Появление кнопки 'Двойной кешбэк'")
     public void checkFaqWasShowed() {
         getSecondaryMenuComponent().openMainPage();
@@ -42,7 +42,7 @@ public class PersonalPageTests extends TestBase {
     }
 
     @Test
-    @Tag("Personal")
+    @Tag("personal")
     @DisplayName("инвестиции")
     public void checkInvesticii() {
         getSecondaryMenuComponent().openMainPage();
