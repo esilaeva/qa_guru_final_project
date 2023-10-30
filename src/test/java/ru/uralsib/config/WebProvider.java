@@ -50,7 +50,6 @@ public class WebProvider implements Supplier<WebDriver> {
         Configuration.browserVersion = config.getBrowserVersion();
         Configuration.browserSize = config.getBrowserSize();
         Configuration.pageLoadStrategy = "eager";
-        //Configuration.downloadsFolder = "C:\\Users\\97253\\Documents\\QA.Guru\\qa_guru_final_project\\src\\test\\resources\\download";
 
         if (config.isRemote()) {
             Configuration.remote = config.getRemoteUrl();

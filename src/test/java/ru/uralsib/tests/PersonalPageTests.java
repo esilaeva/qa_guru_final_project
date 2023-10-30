@@ -1,11 +1,10 @@
-package ru.uralsib.tests.uiTests;
+package ru.uralsib.tests;
 
 import io.qameta.allure.Epic;
 import io.qameta.allure.Feature;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Test;
-import ru.uralsib.tests.TestBase;
 
 @Epic("Тестирование сайта банка Uralsib (UI)")
 @Feature("Тесты страницы 'Частным лицам'")
@@ -48,6 +47,7 @@ public class PersonalPageTests extends TestBase {
         getSecondaryMenuComponent().openMainPage();
         getPersonalPage().openInvesticiiPage();
         getInvesticiiPage().clickBtnMoreInfo();
+
         getIszhPage().clickBtnSubmitApp().checkRequestConsultation();
     }
 }
