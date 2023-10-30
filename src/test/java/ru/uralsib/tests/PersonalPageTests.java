@@ -15,6 +15,7 @@ public class PersonalPageTests extends TestBase {
     @DisplayName("Открытие Main Page")
     public void checkPersonalButton() {
         getSecondaryMenuComponent().openMainPage();
+
         getPersonalPage().checkPersonalPageWasOpened();
     }
 

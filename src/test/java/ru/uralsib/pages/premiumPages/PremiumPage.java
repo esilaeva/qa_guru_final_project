@@ -1,9 +1,9 @@
-package ru.uralsib.ui.pages.premiumPages;
+package ru.uralsib.pages.premiumPages;
 
 import com.codeborne.selenide.SelenideElement;
 import io.qameta.allure.Step;
 import lombok.Data;
-import ru.uralsib.ui.components.SecondaryMenuComponent;
+import ru.uralsib.components.SecondaryMenuComponent;
 
 import java.io.File;
 import java.io.FileNotFoundException;
@@ -63,6 +63,5 @@ public class PremiumPage {
     @Step("Проверка: файл был скачан")
     public void checkDownloadPriceCreditCard(String expectedResult, String actualResult) {
         assertEquals(expectedResult, actualResult);
-        //delete
     }
 }

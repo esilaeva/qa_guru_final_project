@@ -16,6 +16,7 @@ public class BusinessTests extends TestBase {
     public void checkDepositPageWasOpened() {
         getSecondaryMenuComponent().openBusinessPage();
         getBusinessPage().clickDepositButton();
+
         getVedPage().checkVedTitle();
     }
 

@@ -1,4 +1,4 @@
-package ru.uralsib.ui.components;
+package ru.uralsib.components;
 
 import com.codeborne.selenide.SelenideElement;
 import io.qameta.allure.Step;

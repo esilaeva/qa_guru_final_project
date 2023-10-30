@@ -10,14 +10,14 @@ import org.junit.jupiter.api.BeforeEach;
 import ru.uralsib.config.WebConfig;
 import ru.uralsib.config.WebProvider;
 import ru.uralsib.helpers.Attach;
-import ru.uralsib.ui.components.SecondaryMenuComponent;
-import ru.uralsib.ui.pages.businessPages.BusinessPage;
-import ru.uralsib.ui.pages.businessPages.VedPage;
-import ru.uralsib.ui.pages.personalPages.DebetovyeKartyPage;
-import ru.uralsib.ui.pages.personalPages.InvesticiiPage;
-import ru.uralsib.ui.pages.personalPages.IszhPage;
-import ru.uralsib.ui.pages.personalPages.PersonalPage;
-import ru.uralsib.ui.pages.premiumPages.PremiumPage;
+import ru.uralsib.components.SecondaryMenuComponent;
+import ru.uralsib.pages.businessPages.BusinessPage;
+import ru.uralsib.pages.businessPages.VedPage;
+import ru.uralsib.pages.personalPages.DebetovyeKartyPage;
+import ru.uralsib.pages.personalPages.InvesticiiPage;
+import ru.uralsib.pages.personalPages.IszhPage;
+import ru.uralsib.pages.personalPages.PersonalPage;
+import ru.uralsib.pages.premiumPages.PremiumPage;
 
 import static com.codeborne.selenide.Selenide.closeWebDriver;
 

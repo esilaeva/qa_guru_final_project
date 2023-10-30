@@ -1,4 +1,4 @@
-package ru.uralsib.ui.pages.personalPages;
+package ru.uralsib.pages.personalPages;
 
 import com.codeborne.selenide.SelenideElement;
 import io.qameta.allure.Step;
@@ -41,13 +41,6 @@ public class PersonalPage {
 @Step("Open Investicii Page")
     public PersonalPage openInvesticiiPage() {
         getInvesticii().click();
-
-        return this;
-    }
-
-    @Step("Open ATM Page")
-    public PersonalPage openAtmPage() {
-        getOfficeAtm().click();
 
         return this;
     }

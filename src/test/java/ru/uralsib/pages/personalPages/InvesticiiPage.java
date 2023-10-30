@@ -1,4 +1,4 @@
-package ru.uralsib.ui.pages.personalPages;
+package ru.uralsib.pages.personalPages;
 
 import com.codeborne.selenide.SelenideElement;
 import io.qameta.allure.Step;

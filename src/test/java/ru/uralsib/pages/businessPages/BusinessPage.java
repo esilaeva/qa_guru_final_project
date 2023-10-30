@@ -1,4 +1,4 @@
-package ru.uralsib.ui.pages.businessPages;
+package ru.uralsib.pages.businessPages;
 
 import com.codeborne.selenide.SelenideElement;
 import io.qameta.allure.Step;
