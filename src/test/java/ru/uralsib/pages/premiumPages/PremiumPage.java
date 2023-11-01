@@ -3,7 +3,7 @@ package ru.uralsib.pages.premiumPages;
 import com.codeborne.selenide.SelenideElement;
 import io.qameta.allure.Step;
 import lombok.Data;
-import ru.uralsib.components.SecondaryMenuComponent;
+import ru.uralsib.pages.components.SecondaryMenuComponent;
 
 import java.io.File;
 import java.io.FileNotFoundException;
@@ -22,45 +22,45 @@ public class PremiumPage {
             aktsii = $("a[href='https://www.uralsib.ru/aktsii?filters=premium']"),
             ipoteka = $("a[href='/premium/ipoteka']"),
             tabPrice = $(byText("Тарифы и документы")),
-            priceCreditCardPremium = $("a[href='https://www.uralsib.ru/api/directory-engine/files/rates/premial_credcard_200923_5akcgurx.pdf']");
+            priceAndDocs = $("a[href='https://www.uralsib.ru/api/directory-engine/files/rates/perechen-kodov-mcc_1q7wit8h.pdf']");
     SecondaryMenuComponent secondaryMenuComponent = new SecondaryMenuComponent();
 
-    @Step("Нажатие на кнопку 'Кредитная карта'")
+    @Step("Click on the 'Credit Card' button")
     public PremiumPage clickCreditCardButton() {
         getCreditCard().click();
 
         return this;
     }
 
-    @Step("Проверка: страница 'Premium' открыта")
+    @Step("Verify: 'Premium' page is open")
     public void checkPremiumPageWasOpened() {
         getCreditCard().click();
     }
 
-    @Step("Выбор вкладки 'Тарифы и документы'")
-    public PremiumPage clickTabPrice() {
+    @Step("Selecting the 'Tariffs and Documents' tab")
+    public PremiumPage clickTabPriceAndDocs() {
         getTabPrice().click();
 
         return this;
     }
 
-    @Step("Загрузка прайс-листа тарифа 'Кредитная карта с набором услуг Премиальный'")
-    public File clickPriceCreditCard() {
-        getPriceCreditCardPremium().click();
+    @Step("Download the document 'List of MCC codes'")
+    public File clickDocsMcc() {
+        getPriceAndDocs().click();
 
         return downloadPriceCreditCard();
     }
 
-    @Step("Загрузка файла")
+    @Step("Download file")
     public File downloadPriceCreditCard() {
         try {
-            return getPriceCreditCardPremium().download();
+            return getPriceAndDocs().download();
         } catch (FileNotFoundException e) {
             throw new RuntimeException(e);
         }
     }
 
-    @Step("Проверка: файл был скачан")
+    @Step("Verify: the file has been downloaded")
     public void checkDownloadPriceCreditCard(String expectedResult, String actualResult) {
         assertEquals(expectedResult, actualResult);
     }

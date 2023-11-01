@@ -10,11 +10,11 @@ import org.junit.jupiter.api.BeforeEach;
 import ru.uralsib.config.WebConfig;
 import ru.uralsib.config.WebProvider;
 import ru.uralsib.helpers.Attach;
-import ru.uralsib.components.SecondaryMenuComponent;
+import ru.uralsib.pages.components.SecondaryMenuComponent;
 import ru.uralsib.pages.businessPages.BusinessPage;
 import ru.uralsib.pages.businessPages.VedPage;
 import ru.uralsib.pages.personalPages.DebetovyeKartyPage;
-import ru.uralsib.pages.personalPages.InvesticiiPage;
+import ru.uralsib.pages.personalPages.InvestmentsPage;
 import ru.uralsib.pages.personalPages.IszhPage;
 import ru.uralsib.pages.personalPages.PersonalPage;
 import ru.uralsib.pages.premiumPages.PremiumPage;
@@ -27,7 +27,7 @@ public class TestBase {
     SecondaryMenuComponent secondaryMenuComponent = new SecondaryMenuComponent();
     PersonalPage personalPage = new PersonalPage();
     DebetovyeKartyPage debKarty = new DebetovyeKartyPage();
-    InvesticiiPage investiciiPage = new InvesticiiPage();
+    InvestmentsPage investmentsPage = new InvestmentsPage();
     IszhPage iszhPage = new IszhPage();
 
     PremiumPage premiumPage = new PremiumPage();

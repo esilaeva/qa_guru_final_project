@@ -8,13 +8,13 @@ import static com.codeborne.selenide.Selectors.byText;
 import static com.codeborne.selenide.Selenide.$;
 
 @Data
-public class InvesticiiPage {
+public class InvestmentsPage {
 
-    public SelenideElement btnMoreInfo = $(byText("Подробнее"));
+    public SelenideElement btnMoreDetails = $(byText("Подробнее"));
 
-    @Step("Click button MORE")
-    public InvesticiiPage clickBtnMoreInfo() {
-        getBtnMoreInfo().click();
+    @Step("Click 'More details' button")
+    public InvestmentsPage clickBtnMoreDetailsInfo() {
+        getBtnMoreDetails().click();
 
         return this;
     }

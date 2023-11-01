@@ -16,12 +16,12 @@ public class DebetovyeKartyPage {
             premDebKarty = $("div.Chips___wrapper__GpaZ7").$(byText("Премиальные")),
             btnCashBack = $("div #info").$(byText("Двойной кешбэк"));
 
-    @Step("Проверка: страница 'Дебетовые карты' открыта")
+    @Step("Verify: 'Debit Cards' page is open")
     public void checkDebKartyPageWasOpened() {
         getDebKarty().shouldBe(appear);
     }
 
-    @Step("Выбор 'Дебетовые карты' -> 'Премиальные'")
+    @Step("Selecting 'Debit cards' -> 'Premium'")
     public DebetovyeKartyPage clickPremDebKarty()
     {
         getPremDebKarty().click();
@@ -29,7 +29,7 @@ public class DebetovyeKartyPage {
         return this;
     }
 
-    @Step("Проверка: появилась кнопка 'Двойной кешбэк'")
+    @Step("Verify: the 'Double cashback' button appeared")
     public void checkBtnCashBackWasOpened() {
         getBtnCashBack().shouldBe(appear);
     }

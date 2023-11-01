@@ -6,23 +6,26 @@ import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Test;
 
-@Epic("Тестирование сайта банка Uralsib (UI)")
-@Feature("Тесты страницы 'Бизнесу'")
+@Epic("Testing the Uralsib Bank website (UI)")
+@Feature("Tests of the 'Business' page")
 public class BusinessTests extends TestBase {
 
     @Test
     @Tag("business")
-    @DisplayName("Открытие страницы 'Депозиты'")
+    @DisplayName("View documents on the customs card 'ROUND'")
     public void checkDepositPageWasOpened() {
         getSecondaryMenuComponent().openBusinessPage();
-        getBusinessPage().clickDepositButton();
+        getBusinessPage().clickVedButton();
+        getVedPage()
+                .clickDocsAndPriceButton()
+                .clickCustomsCardRound()
 
-        getVedPage().checkVedTitle();
+                .checkServiceCardRoundExist();
     }
 
     @Test
     @Tag("business")
-    @DisplayName("Выбор зарплатного проекта")
+    @DisplayName("Selecting a salary project")
     public void checkBusinessCardPageWasOpened() {
         getSecondaryMenuComponent().openBusinessPage();
         getBusinessPage()

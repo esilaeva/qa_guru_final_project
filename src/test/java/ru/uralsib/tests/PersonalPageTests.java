@@ -6,35 +6,35 @@ import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Test;
 
-@Epic("Тестирование сайта банка Uralsib (UI)")
-@Feature("Тесты страницы 'Частным лицам'")
+@Epic("Testing the Uralsib Bank website (UI)")
+@Feature("Tests of the 'Personal' page")
 public class PersonalPageTests extends TestBase {
 
     @Test
     @Tag("personal")
-    @DisplayName("Открытие Main Page")
+    @DisplayName("Open the 'Personal' page")
     public void checkPersonalButton() {
-        getSecondaryMenuComponent().openMainPage();
+        getSecondaryMenuComponent().openPersonalPage();
 
         getPersonalPage().checkPersonalPageWasOpened();
     }
 
     @Test
     @Tag("personal")
-    @DisplayName("Открытие страницы 'Дебетовые карты'")
-    public void checkDebKartyButton() {
-        getSecondaryMenuComponent().openMainPage();
-        getPersonalPage().openDebetovyeKartyPage();
+    @DisplayName("Open 'Debit Cards' page")
+    public void checkDebitCardsButton() {
+        getSecondaryMenuComponent().openPersonalPage();
+        getPersonalPage().openDebitCardsPage();
 
         getDebKarty().checkDebKartyPageWasOpened();
     }
 
     @Test
     @Tag("personal")
-    @DisplayName("Появление кнопки 'Двойной кешбэк'")
+    @DisplayName("Appearance of the 'Double cashback' button")
     public void checkFaqWasShowed() {
-        getSecondaryMenuComponent().openMainPage();
-        getPersonalPage().openDebetovyeKartyPage();
+        getSecondaryMenuComponent().openPersonalPage();
+        getPersonalPage().openDebitCardsPage();
 
         getDebKarty()
                 .clickPremDebKarty()
@@ -43,12 +43,15 @@ public class PersonalPageTests extends TestBase {
 
     @Test
     @Tag("personal")
-    @DisplayName("инвестиции")
-    public void checkInvesticii() {
-        getSecondaryMenuComponent().openMainPage();
-        getPersonalPage().openInvesticiiPage();
-        getInvesticiiPage().clickBtnMoreInfo();
+    @DisplayName("A request for consultation has appeared")
+    public void checkInvestments() {
+        getSecondaryMenuComponent().openPersonalPage();
+        getPersonalPage().openInvestmentsPage();
+        getInvestmentsPage().clickBtnMoreDetailsInfo();
 
-        getIszhPage().clickBtnSubmitApp().checkRequestConsultation();
+        getIszhPage()
+                .clickBtnSubmitApp()
+
+                .checkRequestConsultation();
     }
 }

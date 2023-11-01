@@ -26,20 +26,20 @@ public class PersonalPage {
             cards = $("div.BlockMenu___tagsContainer__8WHZe div").$(byText("Карты"));
 
 
-    @Step("main Page was opened")
+    @Step("The 'Personal' page is open")
     public void checkPersonalPageWasOpened() {
         getKredity().shouldHave(text("Кредиты"));
     }
 
-    @Step("Open Debetovye-karty Page")
-    public PersonalPage openDebetovyeKartyPage() {
+    @Step("Open the 'Debit Cards' Page")
+    public PersonalPage openDebitCardsPage() {
         getDebetovyeKarty().click();
 
         return this;
     }
 
-@Step("Open Investicii Page")
-    public PersonalPage openInvesticiiPage() {
+@Step("Open the 'Investments' Page")
+    public PersonalPage openInvestmentsPage() {
         getInvesticii().click();
 
         return this;

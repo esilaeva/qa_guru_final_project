@@ -27,28 +27,28 @@ public class BusinessPage {
             messagePrice = $("h3.Typography___Typography__zF6fJ").$(byText("Индивидуальный тариф")),
             bntMakeRequest = $("div.zarplatniy-proekt___buttonContainer__WP2Iq div button");
 
-    @Step("Нажатие на кнопку 'Депозиты'")
-    public BusinessPage clickDepositButton() {
+    @Step("Click on the 'VED' button")
+    public BusinessPage clickVedButton() {
         getVed().click();
 
         return this;
     }
 
-    @Step("Нажатие на кнопку 'Зарплатные проекты'")
+    @Step("Click on the 'Salary projects' button")
     public BusinessPage clickSalaryProjectsButton() {
         getZarplatniyProekt().click();
 
         return this;
     }
 
-    @Step("Нажатие на кнопку 'Тарифы'")
+    @Step("Click on the 'Price' button")
     public BusinessPage clickPriceButton() {
         getPrice().click();
 
         return this;
     }
 
-    @Step("Нажатие на кнопку 'Организациям свыше 30 человек'")
+    @Step("Click on the 'Organizations over 30 people' button")
     public BusinessPage clickBigOrganizationButton() {
         getServiceConditions().shouldBe(appear);
         getBigOrganization().click();
@@ -56,7 +56,7 @@ public class BusinessPage {
         return this;
     }
 
-    @Step("Проверка: появление кнопка 'Оформить заявку'")
+    @Step("Verify: the 'Complete application' button appears")
     public void checkBntMakeRequestExists() {
         getBntMakeRequest().shouldBe(appear);
     }
