@@ -8,13 +8,13 @@ import org.junit.jupiter.api.Test;
 
 import java.io.File;
 
-@Epic("Тестирование сайта банка Uralsib (UI)")
-@Feature("Тесты страницы 'Премиум'")
+@Epic("Testing the Uralsib Bank website (UI)")
+@Feature("Tests of the 'Premium' page")
 public class PremiumTests extends TestBase {
 
     @Test
     @Tag("premium")
-    @DisplayName("Открытие страницы 'Премиум'")
+    @DisplayName("Open 'Premium' page")
     public void checkPremiumPageWasOpened() {
         getSecondaryMenuComponent().openPremiumPage();
         getPremiumPage().checkPremiumPageWasOpened();
@@ -22,14 +22,14 @@ public class PremiumTests extends TestBase {
 
     @Test
     @Tag("premium")
-    @DisplayName("Загрузка прайса")
+    @DisplayName("Download the document 'List of MCC codes'")
     public void downloadPrice() {
         getSecondaryMenuComponent().openPremiumPage();
         File result = getPremiumPage()
                 .clickCreditCardButton()
-                .clickTabPrice()
-                .clickPriceCreditCard();
+                .clickTabPriceAndDocs()
+                .clickDocsMcc();
 
-        getPremiumPage().checkDownloadPriceCreditCard("premial_credcard_200923_5akcgurx.pdf", result.getName());
+        getPremiumPage().checkDownloadPriceCreditCard("perechen-kodov-mcc_1q7wit8h.pdf", result.getName());
     }
 }

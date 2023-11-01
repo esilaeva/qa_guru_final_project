@@ -1,4 +1,4 @@
-package ru.uralsib.components;
+package ru.uralsib.pages.components;
 
 import com.codeborne.selenide.SelenideElement;
 import io.qameta.allure.Step;
@@ -19,17 +19,17 @@ public class SecondaryMenuComponent {
             premium = $("a[href='/premium']");
     WebConfig config = ConfigFactory.create(WebConfig.class, System.getProperties());
 
-    @Step("Открытие страницы 'Бизнесу'")
+    @Step("Open 'Business' page")
     public void openBusinessPage() {
         open("https://www.uralsib.ru/business");
     }
 
-    @Step("Open Main Page")
-    public void openMainPage() {
+    @Step("Open 'Personal' page")
+    public void openPersonalPage() {
         open(config.getBaseUrl());
     }
 
-    @Step("Open Premium Page")
+    @Step("Open 'Premium' Page")
     public void openPremiumPage() {
         open("https://www.uralsib.ru/premium");
     }

@@ -15,14 +15,14 @@ public class IszhPage {
             btnSubmitApp = $(byText("Оставить заявку")),
             requestConsultation = $(byText("Заявка на консультацию"));
 
-    @Step("Click button MORE")
+    @Step("Click 'Submit your application' button")
     public IszhPage clickBtnSubmitApp() {
         getBtnSubmitApp().click();
 
         return this;
     }
 
-    @Step("check")
+    @Step("Verify: a request for consultation has appeared")
     public IszhPage checkRequestConsultation() {
         getRequestConsultation().shouldBe(appear);
 
