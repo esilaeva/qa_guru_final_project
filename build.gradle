@@ -13,6 +13,7 @@ def restAssuredVersion = "5.3.1",
 
 dependencies {
     testImplementation(
+            "commons-io:commons-io:2.6",
             'com.codeborne:selenide:6.19.1',
             "io.rest-assured:rest-assured:$restAssuredVersion",
             "io.rest-assured:json-schema-validator:$restAssuredVersion",
