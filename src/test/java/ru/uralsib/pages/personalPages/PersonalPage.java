@@ -31,14 +31,14 @@ public class PersonalPage {
         getKredity().shouldHave(text("Кредиты"));
     }
 
-    @Step("Open the 'Debit Cards' Page")
+    @Step("Open the 'Debit Cards' page")
     public PersonalPage openDebitCardsPage() {
         getDebetovyeKarty().click();
 
         return this;
     }
 
-@Step("Open the 'Investments' Page")
+@Step("Open the 'Investments' page")
     public PersonalPage openInvestmentsPage() {
         getInvesticii().click();
 

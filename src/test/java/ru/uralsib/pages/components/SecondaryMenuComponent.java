@@ -29,7 +29,7 @@ public class SecondaryMenuComponent {
         open(config.getBaseUrl());
     }
 
-    @Step("Open 'Premium' Page")
+    @Step("Open 'Premium' page")
     public void openPremiumPage() {
         open("https://www.uralsib.ru/premium");
     }

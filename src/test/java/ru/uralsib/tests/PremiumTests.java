@@ -2,9 +2,13 @@ package ru.uralsib.tests;
 
 import io.qameta.allure.Epic;
 import io.qameta.allure.Feature;
+import io.qameta.allure.Owner;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Tag;
+import org.junit.jupiter.api.Tags;
 import org.junit.jupiter.api.Test;
+import ru.uralsib.annotations.JiraIssue;
+import ru.uralsib.annotations.JiraIssues;
 
 import java.io.File;
 
@@ -15,15 +19,18 @@ public class PremiumTests extends TestBase {
     @Test
     @Tag("premium")
     @DisplayName("Open 'Premium' page")
-    public void checkPremiumPageWasOpened() {
+    public void checkPremiumPageWasOpenedTest() {
         getSecondaryMenuComponent().openPremiumPage();
         getPremiumPage().checkPremiumPageWasOpened();
     }
 
     @Test
     @Tag("premium")
+    @Tag("web")
+    @Owner("Elena")
+    @JiraIssues({@JiraIssue("HOMEWORK-928")})
     @DisplayName("Download the document 'List of MCC codes'")
-    public void downloadPrice() {
+    public void downloadPriceTest() {
         getSecondaryMenuComponent().openPremiumPage();
         File result = getPremiumPage()
                 .clickCreditCardButton()
