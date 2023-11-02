@@ -3,6 +3,7 @@
 ### Содержание
 [Технологии и инструменты](#Технологии-и-инструменты)  
 [Сборка в Jenkins](#Сборка-в-Jenkins)  
+[Удаленный запуск из терминала](#Команда для удаленного запуска автотестов из терминала)  
 [Интеграция с Allure Report](#Интеграция-с-Allure-Report)  
 [Интеграция с Allure TestOps](#Интеграция-с-Allure-TestOps)  
 [Интеграция с Jira](#Интеграция-с-Jira)  
@@ -61,6 +62,7 @@
 )
 в `Jenkins`, далее в раздел `Собрать с параметрами`, выбрать необходимые параметры и нажать
 кнопку `Собрать`.
+
 #### Параметры сборки:
 - **WBHOST** - URL Selenoid (по умолчанию selenoid.autotests.cloud)
 - **TASK** - задачи (по умолчанию test)
@@ -72,6 +74,9 @@
 <img width="100%" title="Jenkins" src="src/test/resources/screenshorts/006-jenkins.png">
 <img width="100%" title="Jenkins" src="src/test/resources/screenshorts/007-jenkins.png">
 </p>
+
+### Команда для удаленного запуска автотестов из терминала
+`gradle clean test -Denv=remote`
 
 ### Интеграция с Allure Report
 При удаленном запуске тестов в `Jenkins`, автоматически генерируется [Allure Report](https://jenkins.autotests.cloud/job/qa_guru_21_final_project_ui/22/allure/)

@@ -12,11 +12,11 @@ import ru.uralsib.annotations.Manual;
 import static io.qameta.allure.Allure.step;
 
 
+@Manual
+@Owner("Elena")
 public class ManualTests {
 
     @Test
-    @Manual
-    @Owner("Elena")
     @Tags({@Tag("personal"), @Tag("manual")})
     @DisplayName("Manual test. Open 'Debit Cards' page")
     public void manualCheckDebitCardsButton() {
@@ -26,8 +26,6 @@ public class ManualTests {
     }
 
     @Test
-    @Manual
-    @Owner("Elena")
     @Tags({@Tag("personal"), @Tag("manual")})
     @DisplayName("Manual test. Appearance of the 'Double cashback' button")
     public void manualCheckFaqWasShowed() {
@@ -40,8 +38,6 @@ public class ManualTests {
     }
 
     @Test
-    @Manual
-    @Owner("Elena")
     @Tags({@Tag("personal"), @Tag("manual")})
     @DisplayName("Manual test. A request for consultation has appeared")
     public void manualCheckInvestments() {
@@ -55,8 +51,6 @@ public class ManualTests {
     }
 
     @Test
-    @Manual
-    @Owner("Elena")
     @Tags({@Tag("business"), @Tag("manual")})
     @DisplayName("Manual test. Selecting a salary project")
     public void manualCheckBusinessCardPageWasOpened() {
@@ -70,8 +64,6 @@ public class ManualTests {
     }
 
     @Test
-    @Manual
-    @Owner("Elena")
     @Tags({@Tag("premium"), @Tag("manual")})
     @JiraIssues({@JiraIssue("HOMEWORK-928")})
     @DisplayName("Manual test. Download the document 'List of MCC codes'")
