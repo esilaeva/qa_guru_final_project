@@ -1,4 +1,4 @@
-# Проект по автоматизации тестирования для банка Уралсиб (UI)
+# Проект по автоматизации тестирования UI web-сайта банка Уралсиб
 
 ### Содержание
 [Технологии и инструменты](#Технологии-и-инструменты)  
@@ -79,7 +79,7 @@
 `gradle clean test -Denv=remote`
 
 ### Интеграция с Allure Report
-При удаленном запуске тестов в `Jenkins`, автоматически генерируется [Allure Report](https://jenkins.autotests.cloud/job/qa_guru_21_final_project_ui/22/allure/)
+При удаленном запуске тестов в `Jenkins`, автоматически генерируется [Allure Report](https://jenkins.autotests.cloud/job/qa_guru_21_final_project_ui/allure/)
 
 ##### [Overview](https://jenkins.autotests.cloud/job/qa_guru_21_final_project_ui/22/allure/#)
 
