@@ -90,13 +90,13 @@
 
 <img width="100%" title="Allure Report" src="src/test/resources/screenshorts/004-allureReport.png">
 
-##### [Test details](https://jenkins.autotests.cloud/job/qa_guru_21_final_project_ui/allure/#behaviors)
+##### [Test details](https://jenkins.autotests.cloud/job/qa_guru_21_final_project_ui/allure/#behaviors/3aba0ed0418c51d9a2541965e677aab4/3b9b3740606ef8e6/)
 
 <img width="100%" title="Allure Report" src="src/test/resources/screenshorts/008-allureReport.png">
 
 ### Интеграция с Allure TestOps
 
-В отчете [Allure TestOps](https://allure.autotests.cloud/project/3741/launches) можно:
+В отчете [Allure TestOps](https://allure.autotests.cloud/project/3741/test-cases?treeId=0) можно:
 
 - просматривать созданные тест-кейсы и чек-листы,
 - запускать ручные и автоматические тестовые прогоны,
