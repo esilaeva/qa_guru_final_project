@@ -1,8 +1,10 @@
 # Проект по автоматизации тестирования UI web-сайта банка Уралсиб
 
-<a href="https://www.uralsib.ru/" align="center">
+<p align="center">
+<a href="https://www.uralsib.ru/">
   <img title="Java" src="src/test/resources/icons/uralsib-logo.png">
 </a>
+</p>
 
 > Один из крупнейших универсальных банков федерального уровня, предлагающий финансовые услуги для частных и корпоративных клиентов
 
