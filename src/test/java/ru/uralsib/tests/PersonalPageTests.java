@@ -49,7 +49,7 @@ public class PersonalPageTests extends TestBase {
         getPersonalPage().openInvestmentsPage();
         getInvestmentsPage().clickBtnMoreDetailsInfo();
 
-        getIszhPage()
+        getLifeInsurancePage()
                 .clickBtnSubmitApp()
 
                 .checkRequestConsultation();

@@ -15,7 +15,7 @@ import ru.uralsib.pages.businessPages.BusinessPage;
 import ru.uralsib.pages.businessPages.VedPage;
 import ru.uralsib.pages.personalPages.DebetovyeKartyPage;
 import ru.uralsib.pages.personalPages.InvestmentsPage;
-import ru.uralsib.pages.personalPages.IszhPage;
+import ru.uralsib.pages.personalPages.LifeInsurancePage;
 import ru.uralsib.pages.personalPages.PersonalPage;
 import ru.uralsib.pages.premiumPages.PremiumPage;
 
@@ -28,7 +28,7 @@ public class TestBase {
     PersonalPage personalPage = new PersonalPage();
     DebetovyeKartyPage debKarty = new DebetovyeKartyPage();
     InvestmentsPage investmentsPage = new InvestmentsPage();
-    IszhPage iszhPage = new IszhPage();
+    LifeInsurancePage lifeInsurancePage = new LifeInsurancePage();
 
     PremiumPage premiumPage = new PremiumPage();
 

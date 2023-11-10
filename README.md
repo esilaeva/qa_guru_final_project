@@ -1,15 +1,20 @@
 # Проект по автоматизации тестирования UI web-сайта банка Уралсиб
 
+<a href="https://www.uralsib.ru/" align="center">
+  <img title="Java" src="src/test/resources/icons/uralsib-logo.png">
+</a>
+
+> Один из крупнейших универсальных банков федерального уровня, предлагающий финансовые услуги для частных и корпоративных клиентов
+
 ### Содержание
 [Технологии и инструменты](#Технологии-и-инструменты)  
-[Сборка в Jenkins](#Сборка-в-Jenkins)  
 [Удаленный запуск из терминала](#Команда-для-удаленного-запуска-автотестов-из-терминала)  
+[Сборка в Jenkins](#Сборка-в-Jenkins)  
 [Интеграция с Allure Report](#Интеграция-с-Allure-Report)  
 [Интеграция с Allure TestOps](#Интеграция-с-Allure-TestOps)  
 [Интеграция с Jira](#Интеграция-с-Jira)  
 [Уведомление в Telegram](#Уведомление-в-Telegram)  
 [Примеры видео выполнения тестов на Selenoid](#Примеры-видео-выполнения-тестов-на-Selenoid)
-
 
 ### Технологии и инструменты
 
@@ -56,12 +61,15 @@
 </a>
 </p>
 
+### Команда для удаленного запуска автотестов из терминала
+`gradle clean test -Denv=remote`
+
 ### Сборка в Jenkins
 
 Для запуска сборки необходимо перейти на страницу проекта [qa_guru_21_final_project_ui](https://jenkins.autotests.cloud/job/qa_guru_21_final_project_ui/
 )
-в `Jenkins`, далее в раздел `Собрать с параметрами`, выбрать необходимые параметры и нажать
-кнопку `Собрать`.
+в `Jenkins`, далее в раздел `Build with Parameters`, выбрать необходимые параметры и нажать
+кнопку `Build`.
 
 #### Параметры сборки:
 - **WBHOST** - URL Selenoid (по умолчанию selenoid.autotests.cloud)
@@ -75,17 +83,14 @@
 <img width="100%" title="Jenkins" src="src/test/resources/screenshorts/007-jenkins.png">
 </p>
 
-### Команда для удаленного запуска автотестов из терминала
-`gradle clean test -Denv=remote`
-
 ### Интеграция с Allure Report
 При удаленном запуске тестов в `Jenkins`, автоматически генерируется [Allure Report](https://jenkins.autotests.cloud/job/qa_guru_21_final_project_ui/allure/)
 
-##### [Overview](https://jenkins.autotests.cloud/job/qa_guru_21_final_project_ui/22/allure/#)
+##### [Overview](https://jenkins.autotests.cloud/job/qa_guru_21_final_project_ui/allure/#)
 
 <img width="100%" title="Allure Report" src="src/test/resources/screenshorts/004-allureReport.png">
 
-##### [Test details](https://jenkins.autotests.cloud/job/qa_guru_21_final_project_ui/22/allure/#behaviors)
+##### [Test details](https://jenkins.autotests.cloud/job/qa_guru_21_final_project_ui/allure/#behaviors)
 
 <img width="100%" title="Allure Report" src="src/test/resources/screenshorts/008-allureReport.png">
 

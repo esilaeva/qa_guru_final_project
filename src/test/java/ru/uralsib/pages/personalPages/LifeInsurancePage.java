@@ -9,21 +9,21 @@ import static com.codeborne.selenide.Selectors.byText;
 import static com.codeborne.selenide.Selenide.$;
 
 @Data
-public class IszhPage {
+public class LifeInsurancePage {
 
     public SelenideElement
             btnSubmitApp = $(byText("Оставить заявку")),
             requestConsultation = $(byText("Заявка на консультацию"));
 
     @Step("Click 'Submit your application' button")
-    public IszhPage clickBtnSubmitApp() {
+    public LifeInsurancePage clickBtnSubmitApp() {
         getBtnSubmitApp().click();
 
         return this;
     }
 
     @Step("Verify: a request for consultation has appeared")
-    public IszhPage checkRequestConsultation() {
+    public LifeInsurancePage checkRequestConsultation() {
         getRequestConsultation().shouldBe(appear);
 
         return this;
