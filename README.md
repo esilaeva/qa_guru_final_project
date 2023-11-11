@@ -91,7 +91,7 @@
 [Назад к содержанию](#Содержание)
 
 ### Интеграция с [Allure Report](https://jenkins.autotests.cloud/job/qa_guru_21_final_project_ui/allure/)
-При удаленном запуске тестов в `Jenkins`, автоматически генерируется отчет в `Allure Report`.
+При удаленном запуске тестов в `Jenkins`, автоматически генерируется отчет `Allure Report`.
 
 ##### [Overview](https://jenkins.autotests.cloud/job/qa_guru_21_final_project_ui/allure/#)
 
