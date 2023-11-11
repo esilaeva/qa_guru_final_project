@@ -22,7 +22,7 @@
 
 Автотесты написаны на языке `Java` с использованием `JUnit 5`, `Selenide`. Запуск браузера осуществляется в `Selenoid`.
 Сборщик проекта - `Gradle`. Для удаленного запуска реализована задача в `Jenkins` с формированием `Allure-отчета` и
-отправкой результатов в `Telegram` при помощи бота. Так же осуществлена интеграция с `Allure TestOps` и `Jira`.
+отправкой результатов в `Telegram канал` при помощи бота. Так же осуществлена интеграция с `Allure TestOps` и `Jira`.
 
 <p>
     <a href="https://www.java.com/">
@@ -77,11 +77,11 @@
 кнопку `Build`.
 
 #### Параметры сборки:
-- **WBHOST** - URL Selenoid (по умолчанию selenoid.autotests.cloud)
-- **TASK** - задачи (по умолчанию test)
-- **BROWSER** - браузер (по умолчанию chrome)
-- **BROWSER_VERSION** - версия браузера (по умолчанию 100.0)
-- **BROWSER_SIZE** - размер окна браузера (по умолчанию 1920x1080)
+- **WBHOST** - URL Selenoid (по умолчанию - *selenoid.autotests.cloud*)
+- **TASK** - задачи (по умолчанию - *test*)
+- **BROWSER** - браузер (по умолчанию - *chrome*)
+- **BROWSER_VERSION** - версия браузера (по умолчанию - *100.0*)
+- **BROWSER_SIZE** - размер окна браузера (по умолчанию - *1920x1080*)
 
 <p align="center">
     <img width="100%" title="Jenkins" src="src/test/resources/screenshorts/006-jenkins.png">
@@ -91,7 +91,7 @@
 [Назад к содержанию](#Содержание)
 
 ### Интеграция с [Allure Report](https://jenkins.autotests.cloud/job/qa_guru_21_final_project_ui/allure/)
-При удаленном запуске тестов в `Jenkins`, автоматически генерируется `Allure Report`.
+При удаленном запуске тестов в `Jenkins`, автоматически генерируется отчет в `Allure Report`.
 
 ##### [Overview](https://jenkins.autotests.cloud/job/qa_guru_21_final_project_ui/allure/#)
 
@@ -141,7 +141,7 @@
 
 [Назад к содержанию](#Содержание)
 
-### Уведомление в Telegram
+### Уведомление в [Telegram]("https://t.me/uitests")
 
 После завершения сборки, автоматически отправляется отчет о результатах выполнения тестов в специально созданный `Telegram канал`.
 
