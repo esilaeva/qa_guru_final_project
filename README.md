@@ -117,8 +117,9 @@
 ##### [Ручные и автоматические тест-кейсы](https://allure.autotests.cloud/project/3741/test-cases/26828?treeId=0)
 Для ручных тестов используется подход ["Тест-кейсы как код"](https://www.youtube.com/watch?v=Prm2-c_5mYs&t=39m32s). В `IntelliJ IDEA` установлен плагин `Allure TestOps Support`,
 который позволяет интегририровать `IntelliJ IDEA` и `Allure TestOps`.  
-В `IntelliJ IDEA` прописываются шаги для ручного тест-кейса, прогоняется тест и через `allure-results` синхранизируем
-с `Allure TestOps`. В результате в `Allure TestOps` появляются тест-кейсы для ручных тестов, написанные в `IDE`.  
+В `IntelliJ IDEA` прописываются шаги для ручных тест-кейсов, прогоняются тесты и через `allure-results` синхранизируются
+с `Allure TestOps` через команду `Allure TestOps: Upload Results`. В результате в `Allure TestOps` появляются тест-кейсы
+для ручных тестов, написанные в `IDE`.  
 Преимуществом такого подхода становиться то, что такие тест-кейсы легко поддерживать при помощью средств `IDE`.
 
 <img title="Allure TestOps" src="src/test/resources/screenshorts/010-testOps_testCase.png" alt="Allure TestOps. Test cases">
