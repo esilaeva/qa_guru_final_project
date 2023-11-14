@@ -120,7 +120,7 @@
 В `IntelliJ IDEA` прописываются шаги для ручных тест-кейсов, прогоняются тесты и через `allure-results` синхранизируются
 с `Allure TestOps` через команду `Allure TestOps: Upload Results`. В результате в `Allure TestOps` появляются тест-кейсы
 для ручных тестов, написанные в `IDE`.  
-Преимуществом такого подхода становиться то, что такие тест-кейсы легко поддерживать при помощью средств `IDE`.
+Преимуществом такого подхода становиться то, что такие тест-кейсы легко поддерживать с помощью средств `IDE`.
 
 <img title="Allure TestOps" src="src/test/resources/screenshorts/010-testOps_testCase.png" alt="Allure TestOps. Test cases">
 
