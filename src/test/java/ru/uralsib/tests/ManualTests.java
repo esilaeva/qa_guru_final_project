@@ -3,7 +3,6 @@ package ru.uralsib.tests;
 import io.qameta.allure.Owner;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Tag;
-import org.junit.jupiter.api.Tags;
 import org.junit.jupiter.api.Test;
 import ru.uralsib.annotations.JiraIssue;
 import ru.uralsib.annotations.JiraIssues;
@@ -17,7 +16,7 @@ import static io.qameta.allure.Allure.step;
 public class ManualTests {
 
     @Test
-    @Tags({@Tag("personal"), @Tag("manual")})
+    @Tag("manual")
     @DisplayName("Manual test. Open 'Debit Cards' page")
     public void manualCheckDebitCardsButton() {
         step("Open 'Personal' page");
@@ -26,7 +25,7 @@ public class ManualTests {
     }
 
     @Test
-    @Tags({@Tag("personal"), @Tag("manual")})
+    @Tag("manual")
     @DisplayName("Manual test. Appearance of the 'Double cashback' button")
     public void manualCheckFaqWasShowed() {
         step("Open 'Personal' page");
@@ -38,7 +37,7 @@ public class ManualTests {
     }
 
     @Test
-    @Tags({@Tag("personal"), @Tag("manual")})
+    @Tag("manual")
     @DisplayName("Manual test. A request for consultation has appeared")
     public void manualCheckInvestments() {
         step("Open 'Personal' page");
@@ -51,7 +50,7 @@ public class ManualTests {
     }
 
     @Test
-    @Tags({@Tag("business"), @Tag("manual")})
+    @Tag("manual")
     @DisplayName("Manual test. Selecting a salary project")
     public void manualCheckBusinessCardPageWasOpened() {
         step("Open 'Business' page");
@@ -64,7 +63,7 @@ public class ManualTests {
     }
 
     @Test
-    @Tags({@Tag("premium"), @Tag("manual")})
+    @Tag("manual")
     @JiraIssues({@JiraIssue("HOMEWORK-928")})
     @DisplayName("Manual test. Download the document 'List of MCC codes'")
     public void manualDownloadPremiumPriceTest() {
