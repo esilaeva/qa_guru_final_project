@@ -2,7 +2,7 @@
 
 <p align="center">
     <a href="https://www.uralsib.ru/">
-      <img title="Java" src="src/test/resources/icons/uralsib-logo.png" alt="Банк Уралсиб">
+      <img title="Банк Уралсиб" src="src/test/resources/icons/uralsib-logo.png" alt="Банк Уралсиб">
     </a>
 </p>
 
