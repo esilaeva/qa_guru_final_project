@@ -5,38 +5,49 @@ import io.qameta.allure.Feature;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Test;
+import ru.uralsib.pages.components.SecondaryMenuComponent;
+import ru.uralsib.pages.personalPages.DebetovyeKartyPage;
+import ru.uralsib.pages.personalPages.InvestmentsPage;
+import ru.uralsib.pages.personalPages.LifeInsurancePage;
+import ru.uralsib.pages.personalPages.PersonalPage;
 
 @Epic("Testing the Uralsib Bank website (UI)")
 @Feature("Tests of the 'Personal' page")
 public class PersonalPageTests extends TestBase {
 
+    SecondaryMenuComponent secondaryMenuComponent = new SecondaryMenuComponent();
+    PersonalPage personalPage = new PersonalPage();
+    DebetovyeKartyPage debKarty = new DebetovyeKartyPage();
+    InvestmentsPage investmentsPage = new InvestmentsPage();
+    LifeInsurancePage lifeInsurancePage = new LifeInsurancePage();
+
     @Test
     @Tag("personal")
     @DisplayName("Open the 'Personal' page")
     public void checkPersonalButton() {
-        getSecondaryMenuComponent().openPersonalPage();
+        secondaryMenuComponent.openPersonalPage();
 
-        getPersonalPage().checkPersonalPageWasOpened();
+        personalPage.checkPersonalPageWasOpened();
     }
 
     @Test
     @Tag("personal")
     @DisplayName("Open 'Debit Cards' page")
     public void checkDebitCardsButton() {
-        getSecondaryMenuComponent().openPersonalPage();
-        getPersonalPage().openDebitCardsPage();
+        secondaryMenuComponent.openPersonalPage();
+        personalPage.openDebitCardsPage();
 
-        getDebKarty().checkDebKartyPageWasOpened();
+        debKarty.checkDebKartyPageWasOpened();
     }
 
     @Test
     @Tag("personal")
     @DisplayName("Appearance of the 'Double cashback' button")
     public void checkFaqWasShowed() {
-        getSecondaryMenuComponent().openPersonalPage();
-        getPersonalPage().openDebitCardsPage();
+        secondaryMenuComponent.openPersonalPage();
+        personalPage.openDebitCardsPage();
 
-        getDebKarty()
+        debKarty
                 .clickPremDebKarty()
                 .checkBtnCashBackWasOpened();
     }
@@ -45,11 +56,11 @@ public class PersonalPageTests extends TestBase {
     @Tag("personal")
     @DisplayName("A request for consultation has appeared")
     public void checkInvestments() {
-        getSecondaryMenuComponent().openPersonalPage();
-        getPersonalPage().openInvestmentsPage();
-        getInvestmentsPage().clickBtnMoreDetailsInfo();
+        secondaryMenuComponent.openPersonalPage();
+        personalPage.openInvestmentsPage();
+        investmentsPage.clickBtnMoreDetailsInfo();
 
-        getLifeInsurancePage()
+        lifeInsurancePage
                 .clickBtnSubmitApp()
 
                 .checkRequestConsultation();
