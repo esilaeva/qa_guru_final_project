@@ -6,6 +6,7 @@ import lombok.Data;
 import org.aeonbits.owner.ConfigFactory;
 import ru.uralsib.config.WebConfig;
 
+import static com.codeborne.selenide.Condition.text;
 import static com.codeborne.selenide.Selenide.$;
 import static com.codeborne.selenide.Selenide.open;
 
@@ -17,6 +18,7 @@ public class SecondaryMenuComponent {
             business = $("a[href='/business']"),
             privateBank = $("a[href='http://www.private-bank.ru/']"),
             premium = $("a[href='/premium']");
+
     WebConfig config = ConfigFactory.create(WebConfig.class, System.getProperties());
 
     @Step("Open 'Business' page")
@@ -32,5 +34,16 @@ public class SecondaryMenuComponent {
     @Step("Open 'Premium' page")
     public void openPremiumPage() {
         open("https://www.uralsib.ru/premium");
+    }
+
+    @Step("Open page")
+    public void openPage(String element) {
+        $(element).click();
+    }
+
+    @Step("Open page {0}")
+    public void checkPageOpened(String index, String value) {
+        SelenideElement navigator = $("div.Navigations___navContainer" + index);
+        navigator.shouldHave(text(value));
     }
 }
