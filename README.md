@@ -28,52 +28,52 @@
   <tr>
     <td align="center" style="width: 10%; border: none; padding: 0;">
       <a href="https://www.java.com/">
-        <img width="80%" title="Java" src="src/test/resources/icons/java-original.svg" alt="Java">
+        <img style="border: none;" width="80%" title="Java" src="src/test/resources/icons/java-original.svg" alt="Java">
       </a>
     </td>
     <td align="center" style="width: 10%; border: none; padding: 0;">
       <a href="https://www.jetbrains.com/">
-        <img width="80%" title="IntelliJ IDEA" src="src/test/resources/icons/Idea.svg" alt="IntelliJ IDEA">
+        <img style="border: none;" width="80%" title="IntelliJ IDEA" src="src/test/resources/icons/Idea.svg" alt="IntelliJ IDEA">
       </a>
     </td>
     <td align="center" style="width: 10%; border: none; padding: 0;">
       <a href="https://gradle.org/">
-        <img width="80%" title="Gradle" src="src/test/resources/icons/gradle-plain.svg" alt="Gradle">
+        <img style="border: none;" width="80%" title="Gradle" src="src/test/resources/icons/gradle-plain.svg" alt="Gradle">
       </a>
     </td>
     <td align="center" style="width: 10%; border: none; padding: 0;">
       <a href="https://junit.org/junit5/">
-        <img width="80%" title="JUnit5" src="src/test/resources/icons/Junit5.svg" alt="JUnit5">
+        <img style="border: none;" width="80%" title="JUnit5" src="src/test/resources/icons/Junit5.svg" alt="JUnit5">
       </a>
     </td>
     <td align="center" style="width: 10%; border: none; padding: 0;">
       <a href="https://github.com/">
-        <img width="200%" title="GitHub" src="src/test/resources/icons/github-mark-white.svg" alt="GitHub">
+        <img style="border: none;" width="200%" title="GitHub" src="src/test/resources/icons/github-mark-white.svg" alt="GitHub">
       </a>
     </td>
     <td align="center" style="width: 10%; border: none; padding: 0;">
       <a href="https://selenide.org/">
-        <img width="80%" title="Selenide" src="src/test/resources/icons/Selenide.svg" alt="Selenide">
+        <img style="border: none;" width="80%" title="Selenide" src="src/test/resources/icons/Selenide.svg" alt="Selenide">
       </a>
     </td>
     <td align="center" style="width: 10%; border: none; padding: 0;">
       <a href="https://aerokube.com/selenoid/latest/">
-        <img width="80%" title="Selenoid" src="src/test/resources/icons/Selenoid.svg" alt="Selenoid">
+        <img style="border: none;" width="80%" title="Selenoid" src="src/test/resources/icons/Selenoid.svg" alt="Selenoid">
       </a>
     </td>
     <td align="center" style="width: 10%; border: none; padding: 0;">
       <a href="https://qameta.io/allure-report/">
-        <img width="80%" title="Allure Report" src="src/test/resources/icons/Allure.svg" alt="Allure Report">
+        <img style="border: none;" width="80%" title="Allure Report" src="src/test/resources/icons/Allure.svg" alt="Allure Report">
       </a>
     </td>
     <td align="center" style="width: 10%; border: none; padding: 0;">
       <a href="https://www.jenkins.io/">
-        <img width="80%" title="Jenkins" src="src/test/resources/icons/jenkins-original.svg" alt="Jenkins">
+        <img style="border: none;" width="80%" title="Jenkins" src="src/test/resources/icons/jenkins-original.svg" alt="Jenkins">
       </a>
     </td>
     <td align="center" style="width: 10%; border: none; padding: 0;">
       <a href="https://telegram.org/">
-        <img width="80%" title="Telegram" src="src/test/resources/icons/Telegram.svg" alt="Telegram">
+        <img style="border: none;" width="80%" title="Telegram" src="src/test/resources/icons/Telegram.svg" alt="Telegram">
       </a>
     </td>
   </tr>
