@@ -48,7 +48,7 @@
     </td>
     <td align="center" style="width: 10%; border: none; padding: 0;">
       <a href="https://github.com/">
-        <img width="120%" title="GitHub" src="src/test/resources/icons/github-mark-white.svg" alt="GitHub">
+        <img width="200%" title="GitHub" src="src/test/resources/icons/github-mark-white.svg" alt="GitHub">
       </a>
     </td>
     <td align="center" style="width: 10%; border: none; padding: 0;">
