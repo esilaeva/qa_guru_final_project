@@ -24,7 +24,7 @@
 Сборщик проекта - `Gradle`. Для удаленного запуска реализована задача в `Jenkins` с формированием `Allure-отчета` и
 отправкой результатов в `Telegram канал` при помощи бота. Так же осуществлена интеграция с `Allure TestOps` и `Jira`.
 
-<p align="center">
+<div style="display: flex; justify-content: center; flex-wrap: wrap; gap: 20px;">
     <a href="https://www.java.com/">
       <img width="7%" title="Java" src="src/test/resources/icons/java-original.svg" alt="java">
     </a>
@@ -61,7 +61,7 @@
     <a href="https://www.atlassian.com/software/jira">
       <img width="7%" title="Jira" src="src/test/resources/icons/Jira.svg" alt="Jira">
     </a>
-</p>
+</div>
 
 [Назад к содержанию](#Содержание)
 
